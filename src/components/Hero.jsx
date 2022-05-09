@@ -18,8 +18,8 @@ const Hero = () => {
                 <p className='text-2xl'>Flight Everywhere beyond your limits.</p>
                 <button className='py-3 px-6 sm:w-[60%] my-4'>Get Started</button>
             </div>
-             <div>
-                <img className='w-full' src={bgImg} alt="/" />
+             <div className='im1'>
+                <img src={bgImg} alt="/" />
             </div> 
             {/* <div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
             mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200

@@ -4,7 +4,7 @@
 
 @layer base {
   li {
-    @apply p-4
+    @apply p-6
   }
 
   button {
@@ -14,3 +14,11 @@
   
   
 }
+
+/* .im1 img{
+  padding: 10%;
+  background-image: url("assets/cyber-bg.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  width: 100% ;
+} */
