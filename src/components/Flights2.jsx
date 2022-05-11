@@ -73,7 +73,7 @@ export default function Example() {
             {product.breadcrumbs.map((breadcrumb) => (
               <li key={breadcrumb.id}>
                 <div className="flex items-center">
-                  <a href={breadcrumb.href} className="mr-2 text-sm font-medium text-gray-900">
+                  <a href={breadcrumb.href} className="mr-2 text-2xl font-medium text-gray-900">
                     {breadcrumb.name}
                   </a>
                   <svg
@@ -90,7 +90,7 @@ export default function Example() {
                 </div>
               </li>
             ))}
-            <li className="text-sm">
+            <li className="text-2xl">
               <a href={product.href} aria-current="page" className="font-medium text-gray-500 hover:text-gray-600">
                 {product.name}
               </a>
@@ -135,13 +135,13 @@ export default function Example() {
         {/* Product info */}
         <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
           <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-            <h1 className="text-2xl font-extrabold tracking-tight text-amber-500 sm:text-3xl">{product.name}</h1>
+            <h1 className="text-2xl font-extrabold tracking-tight text-amber-500 sm:text-6xl">{product.name}</h1>
           </div>
 
           {/* Options */}
           <div className="mt-4 lg:mt-0 lg:row-span-3">
             <h2 className="sr-only">Product information</h2>
-            <p className="text-3xl text-gray-900">{product.price}</p>
+            <p className="text-4xl text-gray-900">{product.price}</p>
 
             {/* Reviews */}
             <div className="mt-6">
@@ -280,15 +280,15 @@ export default function Example() {
               <h3 className="sr-only">Description</h3>
 
               <div className="space-y-6">
-                <p className="text-base text-gray-900">{product.description}</p>
+                <p className="text-2xl text-gray-900">{product.description}</p>
               </div>
             </div>
 
             <div className="mt-10">
-              <h3 className="text-xl font-medium text-gray-900">Highlights</h3>
+              <h3 className="text-3xl font-medium text-gray-900">Highlights</h3>
 
               <div className="mt-4">
-                <ul role="list" className="pl-4 list-disc text-xl font-style: italic space-y-2">
+                <ul role="list" className="pl-4 list-disc text-2xl font-style: italic space-y-2">
                   {product.highlights.map((highlight) => (
                     <li key={highlight} className="text-gray-400">
                       <span className="text-gray-600">{highlight}</span>
@@ -299,10 +299,10 @@ export default function Example() {
             </div>
 
             <div className="mt-10">
-              <h2 className="text-xl font-medium text-gray-900">Details</h2>
+              <h2 className="text-3xl font-medium text-gray-900">Details</h2>
 
               <div className="mt-4 space-y-6">
-                <p className="text-base text-gray-600">{product.details}</p>
+                <p className="text-2xl text-gray-600">{product.details}</p>
               </div>
             </div>
           </div>
