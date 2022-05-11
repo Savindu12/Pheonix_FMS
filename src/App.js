@@ -4,8 +4,10 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing';
+import Flights from './components/Flights';
 import Transaction from './components/Transactions';
-import Support from './components/Support'
+import Support from './components/Support';
+import Tickets from './components/Tickets'
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <Transaction/>
       <Support />
       <AllInOne />
+      <Flights />
       <Pricing />
+      <Tickets />
       <Footer />
     </>
   );
