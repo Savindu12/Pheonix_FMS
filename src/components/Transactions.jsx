@@ -6,25 +6,25 @@ const features = [
   {
     name: 'Our People',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We offer a wide range of professional services to our people and we assure that our clients receive the best experience.',
     icon: GlobeAltIcon,
   },
   {
     name: 'Our Communities',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Our community consists of a group of well trained, experienced aviators and we provide the opportunity to grow and rise together.',
     icon: AnnotationIcon,
   },
   {
     name: 'Our features',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We have developed numerous features to improve cost-efficiency and optimize your operations.',
     icon: LightningBoltIcon,
   },
   {
     name: 'Our Rates',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We offer the most reasonable and affordable rates. Plan your holiday with our latest travel deals and promotions.',
       icon: ScaleIcon,
   },
 ]

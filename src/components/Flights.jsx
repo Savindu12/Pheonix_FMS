@@ -253,7 +253,7 @@ export default function Example() {
               <h3 className="text-xl font-medium text-gray-900">Highlights</h3>
 
               <div className="mt-4">
-                <ul role="list" className="pl-4 list-disc text-base space-y-2">
+                <ul role="list" className="pl-4 list-disc text-xl font-style: italic space-y-2">
                   {product.highlights.map((highlight) => (
                     <li key={highlight} className="text-gray-400">
                       <span className="text-gray-600">{highlight}</span>
