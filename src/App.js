@@ -7,7 +7,7 @@ import Pricing from './components/Pricing';
 import Flights from './components/Flights';
 import Transaction from './components/Transactions';
 import Support from './components/Support';
-import Tickets from './components/Tickets'
+import Collections from './components/Collections'
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
       <Support />
       <AllInOne />
       <Flights />
+      <Collections />
       <Pricing />
-      <Tickets />
       <Footer />
     </>
   );
