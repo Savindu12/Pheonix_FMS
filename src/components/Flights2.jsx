@@ -4,36 +4,36 @@ import { RadioGroup } from '@headlessui/react'
 
 
 const product = {
-  name: 'SWITZERLAND',
-  price: '$885 (Rs.318,000.00) ',
+  name: 'JAPAN',
+  price: '$775 (Rs.279,000.00) ',
   href: '#',
   breadcrumbs: [
     { id: 1, name: 'Flights', href: '#' },
-    { id: 2, name: 'SWISS', href: '#' },
+    { id: 2, name: 'TOKYO', href: '#' },
   ],
   images: [
     {
-      src: "https://cdn.pixabay.com/photo/2019/11/19/07/50/bridge-4636745_960_720.jpg",
-      alt: 'Zurich cityscape.',
+      src: "https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGphcGFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      alt: 'Pagoda temple during daytime.',
     },
     {
-      src: 'https://images.unsplash.com/photo-1504218727796-db522606b16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
-      alt: 'Birds eye view of ski lift over mountains durind winter.',
+      src: 'https://media.istockphoto.com/photos/fuji-mountain-and-cherry-blossoms-in-spring-japan-picture-id1086267840?b=1&k=20&m=1086267840&s=170667a&w=0&h=wUr4vMh84zNW3meYVVW3jje9Ta14WiJKbb2MAKdx1Q0=',
+      alt: 'Fuji mountain and cherry blossoms in spring.',
     },
     {
-      src: 'https://media.istockphoto.com/photos/zermatt-village-with-view-of-matterhorn-in-the-swiss-alps-picture-id486574518?b=1&k=20&m=486574518&s=170667a&w=0&h=-VGBpGiN1t35Wm1DgLOxNVis_1e6zvviUUC2QGGc5MQ=',
-      alt: 'Zermatt village with the peak of the Matterhorn in the Swiss Alps.',
+      src: 'https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80',
+      alt: 'The Torii gate which stands on the sea of lake Ashi.',
     },
     {
-      src: 'https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      alt: 'Mountains in Switzerland.',
+      src: 'https://images.unsplash.com/photo-1573455494057-12684d151bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8amFwYW4lMjBjaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      alt: 'Streets of Japan at night.',
     },
   ],
-//   colors: [
-//     { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
-//     { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
-//     { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
-//   ],
+  colors: [
+    { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
+    { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
+    { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
+  ],
   sizes: [
     { name: 'None', inStock: false },
     { name: '1', inStock: true },
@@ -45,24 +45,24 @@ const product = {
     { name: 'Study', inStock: true },
   ],
   description:
-    'Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge.',
+    'Japan is known worldwide for its traditional arts, including tea ceremonies, calligraphy and flower arranging. The country has a legacy of distinctive gardens, sculpture and poetry. Japan is home to more than a dozen UNESCO World Heritage sites and is the birthplace of sushi, one of its most famous culinary exports.',
   highlights: [
-    'Ski resorts and hiking trails.',
-    'Finance Industry.',
-    'Swiss watches and chocolate.',
-    'World renowned and confederation.',
+    'Centuries-old shrines, pristine national parks and chic urban centers.',
+    'Theme parks and wide open spaces to experience some of Japan’s biggest thrills.',
+    'Highly seasonal regional specialties and dishes.',
+    'Traditional Japanese theater, avant-garde art installations and local festivals ranging from the regal to the raucous.',
   ],
   details:
-    'Zurich is Switzerland’s centre of economic life and education. Located in the heart of Europe, the city offers all the modern amenities of a cosmopolitan metropolis, without sacrificing its natural side. Zurich is abuzz with activity day and night with its countless events, diverse museums, own food festival and Switzerland’s most vibrant nightlife. And if you’re after rest and relaxation, you can be in the Swiss mountains in less than an hour.',
+    'Across Japan, you will find cultural heritage high rated by international standards. See industry-leading architecture and design, and enjoy the beauty of the changing seasons, from magnificent gardens to department stores and cuisine. Leave the towns and cities behind, and discover hot spring hamlets in the mountains, white sandy beaches and an array of adventure activities.',
 }
-const reviews = { href: '#', average: 5, totalCount: 297 }
+const reviews = { href: '#', average: 4, totalCount: 247 }
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
-//   const [selectedColor, setSelectedColor] = useState(product.colors[0])
+  const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
   return (
@@ -167,6 +167,41 @@ export default function Example() {
             </div>
 
             <form className="mt-10">
+              {/* Colors */}
+              {/* <div>
+                <h3 className="text-sm text-gray-900 font-medium">Color</h3> */}
+
+                {/* <RadioGroup value={selectedColor} onChange={setSelectedColor} className="mt-4">
+                  <RadioGroup.Label className="sr-only">Choose a color</RadioGroup.Label>
+                  <div className="flex items-center space-x-3">
+                    {product.colors.map((color) => (
+                      <RadioGroup.Option
+                        key={color.name}
+                        value={color}
+                        className={({ active, checked }) =>
+                          classNames(
+                            color.selectedClass,
+                            active && checked ? 'ring ring-offset-1' : '',
+                            !active && checked ? 'ring-2' : '',
+                            '-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none'
+                          )
+                        }
+                      >
+                        <RadioGroup.Label as="span" className="sr-only">
+                          {color.name}
+                        </RadioGroup.Label>
+                        <span
+                          aria-hidden="true"
+                          className={classNames(
+                            color.class,
+                            'h-8 w-8 border border-black border-opacity-10 rounded-full'
+                          )}
+                        />
+                      </RadioGroup.Option>
+                    ))}
+                  </div>
+                </RadioGroup> */}
+              {/* </div> */}
 
               {/* Sizes */}
               <div className="mt-10">
@@ -272,11 +307,8 @@ export default function Example() {
             </div>
           </div>
         </div>
-        
       </div>
-      
     </div>
   )
 }
-
 

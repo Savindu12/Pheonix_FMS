@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing';
 import Flights from './components/Flights';
+import Flights2 from './components/Flights2';
 import Transaction from './components/Transactions';
 import Support from './components/Support';
 import Collections from './components/Collections'
@@ -19,6 +20,7 @@ function App() {
       <Support />
       <AllInOne />
       <Flights />
+      <Flights2 />
       <Collections />
       <Pricing />
       <Footer />
