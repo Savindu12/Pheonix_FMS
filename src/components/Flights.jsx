@@ -73,7 +73,7 @@ export default function Example() {
             {product.breadcrumbs.map((breadcrumb) => (
               <li key={breadcrumb.id}>
                 <div className="flex items-center">
-                  <a href={breadcrumb.href} className="mr-2 text-sm font-medium text-gray-900">
+                  <a href={breadcrumb.href} className="mr-2 text-lg font-medium text-gray-900">
                     {breadcrumb.name}
                   </a>
                   <svg
@@ -90,7 +90,7 @@ export default function Example() {
                 </div>
               </li>
             ))}
-            <li className="text-sm">
+            <li className="text-2xl">
               <a href={product.href} aria-current="page" className="font-medium text-gray-500 hover:text-gray-600">
                 {product.name}
               </a>
@@ -135,7 +135,7 @@ export default function Example() {
         {/* Product info */}
         <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
           <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-            <h1 className="text-2xl font-extrabold tracking-tight text-amber-500 sm:text-3xl">{product.name}</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-amber-500 sm:text-3xl">{product.name}</h1>
           </div>
 
           {/* Options */}
