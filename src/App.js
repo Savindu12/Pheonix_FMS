@@ -9,8 +9,8 @@ import Flights2 from './components/Flights2';
 import Transaction from './components/Transactions';
 import Support from './components/Support';
 import Collections from './components/Collections';
+import FlightApp from './components/FlightApp';
 import { useState } from 'react';
-import LoginForm from './components/LoginForm';
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
       <Hero />
       <About />
       <Transaction/>
+      <FlightApp/>
       <Support />
       <AllInOne />
       <Flights />
