@@ -18,8 +18,8 @@ const Navbar = () => {
           <ul className='hidden md:flex text-xl ml-20 pl-20'>
           <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
           <li><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
-          <li><Link to="/Dashboard" smooth={true} offset={-50} duration={500}>Support</Link></li>
-          <li><Link to="Packages" smooth={true} offset={-100} duration={500}>Packages</Link></li>
+          <li><Link to='/Admin'>Admin</Link></li>
+          <li><Link to="Packages" smooth={true} offset={-100} duration={500}>Staff</Link></li>
           <li><Link to="Contact" smooth={true} offset={-50} duration={500}>Contact</Link></li>
           </ul>
         </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
       <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="home" smooth={true} duration={500}>Home</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="support" smooth={true} offset={-50} duration={500}>Support</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'><Link to="Admin" smooth={true} offset={-50} duration={500}>Admin</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="platforms" smooth={true} offset={-100} duration={500}>Packages</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="pricing" smooth={true} offset={-50} duration={500}>Pricing</Link></li>
 
