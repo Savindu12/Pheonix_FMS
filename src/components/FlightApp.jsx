@@ -362,7 +362,7 @@ const FlightApp = () =>{
                     <input
                       type="submit"
                       value="Find flight"
-                      className="w-full h-16 font-bold text-3xl uppercase rounded-lg bg-green-100 hover:bg-white"
+                      className="w-full h-16 font-bold text-3xl uppercase rounded-lg bg-amber-500 hover:bg-orange"
                     />
                   </div>
                 </div>
