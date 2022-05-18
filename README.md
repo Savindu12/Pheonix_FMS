@@ -3,5 +3,5 @@ Phoenix Airline System is a web application with a small online flight booking s
 
 
 <p align="center">
-  <img src="https://github.com/Savindu12/Phoenix_FMS/blob/main/src/assets/HomeDesign.png" width="500" height="500">
+  <img src="https://github.com/Savindu12/Phoenix_FMS/blob/main/src/assets/HomeDesign.png" width="1000">
 </p>
