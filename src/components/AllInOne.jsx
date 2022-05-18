@@ -7,9 +7,7 @@ const AllInOne = () => {
       <div className='max-w-[1240px] mx-auto px-2'>
         <h2 className='text-5xl font-bold text-center'>All-In-One Platform</h2>
         <p className='text-2xl py-8 text-gray-500 text-center'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
-          ab. Officia sunt nulla aspernatur culpa, eaque tenetur excepturi
-          nostrum tempore.
+          We are glad to offer you with a platform where you can get all the relevant details in the most convenient way.
         </p>
 
         <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4'>
@@ -19,11 +17,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>User login</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                Quick and easy access to our flight management system. 
               </p>
             </div>
           </div>
@@ -32,11 +28,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>Flight booking</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                Fully automated flight booking system.
               </p>
             </div>
           </div>
@@ -45,11 +39,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>Seat reservations</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                Reserve your seats in the most convenient way.
               </p>
             </div>
           </div>
@@ -58,11 +50,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>Flight details</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                Get updated with all the flight details at the earliest possible time. 
               </p>
             </div>
           </div>
@@ -71,11 +61,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>Payment procedures</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                All payments are processed through a highly secured payment gateway.
               </p>
             </div>
           </div>
@@ -84,11 +72,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>Friendly community</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                Our friendly community is ready to assist you with anything you require. 
               </p>
             </div>
           </div>
@@ -97,11 +83,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>Profile updates</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                All profiles are being updated and managed automatically.
               </p>
             </div>
           </div>
@@ -110,11 +94,9 @@ const AllInOne = () => {
               <CheckIcon className='w-7 mr-4 text-green-600' />
             </div>
             <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
+              <h3 className='font-bold text-lg'>privacy policy</h3>
               <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
+                All information is protected from unauthorized access and used only within the system.
               </p>
             </div>
           </div>

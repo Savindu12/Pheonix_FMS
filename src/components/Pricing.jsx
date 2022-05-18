@@ -14,9 +14,7 @@ const Pricing = () => {
           <h2 className='text-3xl uppercase'>Ticket Pricing</h2>
           <h3 className='text-5xl font-bold text-white py-8'>The right price for your research.</h3>
           <p className='text-3xl'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
-            laudantium odio ullam inventore aliquid ipsum quasi tenetur velit
-            voluptatum iste.
+            Enjoy your journey with the most reasonable prices that you can find. Fly to the most popular destinations with the best discounts and deals. 
           </p>
         </div>
 
