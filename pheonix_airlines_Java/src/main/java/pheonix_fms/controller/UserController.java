@@ -1,27 +1,27 @@
-package com.arjuncodes.studentsystem.controller;
+package com.arjuncodes.PheonixAirlinesystem.controller;
 
-import com.arjuncodes.studentsystem.model.Student;
-import com.arjuncodes.studentsystem.service.StudentService;
+import com.arjuncodes.PheonixAirlines.model.User;
+import com.arjuncodes.PheonixAirlines.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/User")
 @CrossOrigin
-public class StudentController {
+public class UserController {
     @Autowired
-    private StudentService studentService;
+    private UserService userService;
 
     @PostMapping("/add")
-    public String add(@RequestBody Student student){
-        studentService.saveStudent(student);
-        return "New student is added";
+    public String add(@RequestBody User user){
+        UserService.saveStudent(user);
+        return "New user is added";
     }
 
     @GetMapping("/getAll")
-    public List<Student> list(){
-        return studentService.getAllStudents();
+    public List<User> list(){
+        return UserService.getAllUsers();
     }
 }

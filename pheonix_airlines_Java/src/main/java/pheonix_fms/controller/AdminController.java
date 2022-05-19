@@ -1,6 +1,6 @@
 package com.arjuncodes.PheonixAirlinesystem.controller;
 
-import com.arjuncodes.PheonixAirlines.model.User;
+import com.arjuncodes.PheonixAirlines.model.Admin;
 import com.arjuncodes.PheonixAirlines.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -8,21 +8,31 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/Admin")
 @CrossOrigin
-public class UserController {
+public class AdminController {
     @Autowired
-    private UserService studentService;
+    private AdminService adminService;
 
     @PostMapping("/add")
-    public String add(@RequestBody User user){
-        UserService.saveStudent(user);
-        return "New user is added";
+    public String add(@RequestBody Staff staff1){
+       StaffService.saveStaff1(staff1)
+        return "New Staff member is added (Grade 1 )";
     }
 
-    @GetMapping("/getAll")
-    public List<User> list(){
-        return UserService.getAllStudents();
+    public String add(@RequestBody Staff staff2){
+        StaffService.saveStaff2(staff2)
+         return "New Staff member is added (Grade 2 )";
+     }
+
+    @GetMapping("/getAllStaffGrade1")
+    public List<Staff1> list(){
+        return Staffervice.getAllStaff();
+    }
+    
+    @GetMapping("/getAllStaffGrade2")
+    public List<Staff2> list(){
+        return Staffervice.getAllStaff();
     }
 }
 

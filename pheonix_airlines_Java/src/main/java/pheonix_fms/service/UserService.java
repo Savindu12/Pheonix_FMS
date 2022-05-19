@@ -1,10 +1,10 @@
-package com.arjuncodes.studentsystem.service;
+package com.arjuncodes.PheonixAirlinesystem.service;
 
-import com.arjuncodes.studentsystem.model.Student;
+import com.arjuncodes.PheonixAirlinesystem.model.User;
 
 import java.util.List;
 
-public interface StudentService {
-    public Student saveStudent(Student student);
-    public List<Student> getAllStudents();
+public interface UserService {
+    public User saveStudent(User user);
+    public List<User> getAllUsers();
 }

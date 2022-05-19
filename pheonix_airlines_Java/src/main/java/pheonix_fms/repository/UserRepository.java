@@ -1,9 +1,9 @@
-package com.arjuncodes.studentsystem.repository;
+package com.arjuncodes.PheonixAirlinesystem.repository;
 
-import com.arjuncodes.studentsystem.model.Student;
+import com.arjuncodes.PheonixAirlinesystem.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student,Integer> {
+public interface UserRepository extends JpaRepository<User,Integer> {
 }
