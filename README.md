@@ -23,7 +23,7 @@
  <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css3" width="40" height="40"/>&nbsp;&nbsp;
  <img src="https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png" alt="javascript" height="40"/>&nbsp;&nbsp;
  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="node-js" width="50"/>&nbsp;&nbsp;
- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPJvR-kaQcRrzFQikt6g94ZSNoXHAW1vtrDuHuzHROHyf6RWRAiL-Y1BRWnVZShZEmT8&usqp=CAU" alt="react" width="42" /><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg" alt="css3" height="60"/>
+ <img src="https://github.com/Savindu12/Pheonix_FMS/blob/main/src/assets/react%20logo.png" alt="react" width="52" /><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg" alt="css3" height="60"/>
  </p><br>
  <p align="left">  
   <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/>&nbsp;&nbsp;
