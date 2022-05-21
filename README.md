@@ -13,9 +13,9 @@
 
  
  <p align="left">  
- <img src="https://thepiguy.altervista.org/wp-content/uploads/2017/06/mysql-logo.jpg" alt="mysql" width="70"/>&nbsp;&nbsp;
- <img src="https://www.vectorlogo.zone/logos/java/java-vertical.svg" alt="css3" height="50"/>&nbsp;&nbsp;
- <img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="javascript" height="40" width="60"/>&nbsp;&nbsp;
+ <img src="https://thepiguy.altervista.org/wp-content/uploads/2017/06/mysql-logo.jpg" alt="mysql" width="65" height="45"/>&nbsp;&nbsp;
+ <img src="https://www.vectorlogo.zone/logos/java/java-vertical.svg" alt="css3" height="60" width="45"/>&nbsp;&nbsp;
+ <img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="javascript" height="50" width="75"/>&nbsp;&nbsp;
  
  </p>
  <p align="left">  
