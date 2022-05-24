@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="com.website.airline.FlightDetailBean" %>
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flight Details</title>
+    <title>Home</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -14,6 +12,30 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
+   <script type="text/javascript">
+	function checkMe()
+	{
+		if(document.getElementById('ch1').checked==false && document.getElementById('ch2').checked==false && document.getElementById('ch3').checked==false)
+			{
+			alert('Please select atleast one criteria for stops');
+			return false;
+			}
+		
+		if(document.getElementById('dac').value=='' || document.getElementById('aac').value=='')
+			{
+			alert('Please enter both departure and arrival airport codes');
+			return false;
+			}
+		
+		if(document.getElementById('dac').value==document.getElementById('aac').value)
+		{
+		alert('Please enter different departure and arrival airport codes');
+		return false;
+		}
+		
+	}
+   </script>
 </head>
 <body>
 
@@ -31,8 +53,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger square-btn-adjust">Home</a> 
-										</div>
+font-size: 16px;"> Welcome Guest &nbsp; </div>
         </nav>   
         
        
@@ -47,19 +68,19 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
                     <div class="carousel-inner">
                         <div class="item active">
 
-                            <img src="assets/img/1.jpg" alt="" />
+                            <img src="assets/img/aa.jpg" alt="" />
                             <div class="carousel-caption" >
                                 <h4 class="back-light"></h4>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/2.jpg" alt="" />
+                            <img src="assets/img/aa1.jpg" alt="" />
                             <div class="carousel-caption ">
                                 <h4 class="back-light"></h4>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/3.jpg" alt="" />
+                            <img src="assets/img/sw1.jpg" alt="" />
                             <div class="carousel-caption ">
                                 <h4 class="back-light"></h4>
                             </div>
@@ -84,44 +105,44 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
                  <!-- /. ROW  -->
                  <hr />
                  
-             
-                
-                
-                
-                <form action="/AirlineReservationSystem/ActionServlet" method="post">
-                 <%ArrayList<FlightDetailBean> list = (ArrayList<FlightDetailBean>)request.getAttribute("flightDetails"); %>
-                
-                <h2>Following are direct flights between <%=request.getAttribute("departureCode") %> and <%=request.getAttribute("arrivalCode") %></h2>
-                
-                <table style="width: 40%">
-                <tr>
-                <th >Flight Number &nbsp;&nbsp;&nbsp;
-                </th>
-                
-                <th >&nbsp;&nbsp;&nbsp;Weekdays
-                </th>
-                </tr>
-                
-                <%for(int i=0;i<list.size();i++)
-                	{                	
-                	%>
-                <tr>
-                <td align="center">
-                <%=list.get(i).getFlightNumber() %>
-                </td>
-                
-                <td align="center">
-                <%=list.get(i).getWeekdays() %>
-                </td>
-                
-                </tr>
-                <%} %>
-                </table>
-                
+                 
+                 <form action="/AirlineReservationSystem/ActionServlet" method="post" onsubmit="return checkMe();">
+                 <input type="hidden" name="type" value="flightdetails">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>Find Flights between two airports</h2>  
+                                                                      
+                        <h4>Enter Departure Airport Code :</h4> &nbsp;
+                        <input type="text" name="dac" id="dac" />
+                        <h4>Enter Arrival Airport Code :</h4> &nbsp;
+                        <input type="text" name="aac" id="aac" />
+                        
+                        <br />
+                        &nbsp;
+                        <br />
+                        
+                        <input type="checkbox" name="stops" id="ch1" value="0" checked="checked">Direct Flights (Non-Stop)<br>
+                        
+						<input type="checkbox" name="stops" id="ch2" value="1">Flights with one stop
+						<br> 
+						<input type="checkbox" name="stops" id="ch3" value="2">Flights with two stops 
+						
+						<br />
+						<br />                       
+                        <input type="submit" name="submit"  value="Show Flights" class="btn btn-success ">
+                      	
+                      	
+                      	
+                    </div>
+                </div>
                 <hr />
                 </form>
                 
-              
+                <br />
+                
+                
+
+
 
                   <div class="row">                     
                       
@@ -168,6 +189,7 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
         </div>
         </div>
         </div>
+        
         <script type="text/javascript" src="assets/js/canvasjs.min.js"></script>
         
      <!-- /. WRAPPER  -->

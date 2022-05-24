@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="com.website.airline.FlightDetailBean" %>
+
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flight Details</title>
+    <title>Available Seats</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -14,6 +13,28 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  
+  
+  function checkMe()
+  {
+	  if(document.getElementById('flightNum').value=='' || document.getElementById('datepicker').value=='')
+		{
+		alert('Please select both flight number and date');
+		return false;
+		}
+  }
+  </script>
+  
+  
 </head>
 <body>
 
@@ -44,27 +65,28 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
          
                 <div id="carousel-example" class="carousel slide" data-ride="carousel">
 
-                    <div class="carousel-inner">
+                   <div class="carousel-inner">
                         <div class="item active">
 
-                            <img src="assets/img/1.jpg" alt="" />
+                            <img src="assets/img/aa.jpg" alt="" />
                             <div class="carousel-caption" >
                                 <h4 class="back-light"></h4>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/2.jpg" alt="" />
+                            <img src="assets/img/aa1.jpg" alt="" />
                             <div class="carousel-caption ">
                                 <h4 class="back-light"></h4>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/3.jpg" alt="" />
+                            <img src="assets/img/sw1.jpg" alt="" />
                             <div class="carousel-caption ">
                                 <h4 class="back-light"></h4>
                             </div>
                         </div>
                     </div>
+
 
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
@@ -81,6 +103,7 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
         <div id="page-wrapper" >
             <div id="page-inner">
                 
+                
                  <!-- /. ROW  -->
                  <hr />
                  
@@ -88,41 +111,35 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
                 
                 
                 
-                <form action="/AirlineReservationSystem/ActionServlet" method="post">
-                 <%ArrayList<FlightDetailBean> list = (ArrayList<FlightDetailBean>)request.getAttribute("flightDetails"); %>
-                
-                <h2>Following are direct flights between <%=request.getAttribute("departureCode") %> and <%=request.getAttribute("arrivalCode") %></h2>
-                
-                <table style="width: 40%">
-                <tr>
-                <th >Flight Number &nbsp;&nbsp;&nbsp;
-                </th>
-                
-                <th >&nbsp;&nbsp;&nbsp;Weekdays
-                </th>
-                </tr>
-                
-                <%for(int i=0;i<list.size();i++)
-                	{                	
-                	%>
-                <tr>
-                <td align="center">
-                <%=list.get(i).getFlightNumber() %>
-                </td>
-                
-                <td align="center">
-                <%=list.get(i).getWeekdays() %>
-                </td>
-                
-                </tr>
-                <%} %>
-                </table>
+                <form action="/AirlineReservationSystem/ActionServlet" method="post" onsubmit="return checkMe();">
+                 <input type="hidden" name="type" value="availseats">
+                 <div class="row">
+                    <div class="col-md-12">
+                     <h2>Find Seat Availability</h2>  
+                                                                      
+                        <h4>Enter Flight Number : &nbsp;
+                        <input type="text" name="flightNum" id="flightNum" />
+                        </h4>
+                        
+                        <h4>Date: <input type="text" name="date" id="datepicker"></h4>
+                        
+                        <br />
+                        &nbsp;
+                      
+                        
+                        <input type="submit" name="submit" value="Show Seats" class="btn btn-success ">
+                      
+                    </div>
+                </div>
+                <hr />
                 
                 <hr />
                 </form>
                 
               
 
+
+                  
                   <div class="row">                     
                       
                               <div class="col-md-6 col-sm-12 col-xs-12">                     
@@ -173,7 +190,7 @@ font-size: 16px;"> Welcome Guest &nbsp; <a href="Home.jsp" class="btn btn-danger
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    
       <!-- BOOTSTRAP SCRIPTS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
